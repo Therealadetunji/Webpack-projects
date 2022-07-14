@@ -1,4 +1,4 @@
-// import _ from 'lodash';
+import _ from 'lodash';
 import './style.css';
 
 const toDoList = document.querySelector('#todo');
@@ -35,8 +35,9 @@ ul2.appendChild(li2);
 ul.appendChild(li);
 li.appendChild(form);
 
-thirdDiv.innerHTML += '<i class=\'fa fa-refresh\'></i>';
-foot.innerHTML += '<button type=\'button\' class=\'link-button clear-completed js-clear-completed\'>Clear all completed</button>';
+thirdDiv.innerHTML += "<i class='fa fa-refresh'></i>";
+foot.innerHTML +=
+  "<button type='button' class='link-button clear-completed js-clear-completed'>Clear all completed</button>";
 
 const activityList = [
   {
