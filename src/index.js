@@ -18,7 +18,7 @@ const thirdDiv = document.createElement('div');
 thirdDiv.id = 'refresh';
 const h2 = document.createElement('h2');
 h2.title = 'todolist';
-h2.innerHTML = `ToDoList`;
+h2.innerHTML = 'ToDoList';
 const span = document.createElement('span');
 span.id = 'count show';
 const form = document.querySelector('#form');
@@ -38,7 +38,7 @@ li.appendChild(form);
 thirdDiv.innerHTML += `<i class="fa fa-refresh"></i>`;
 foot.innerHTML += `<button type="button" class="link-button clear-completed js-clear-completed">Clear all completed</button>`;
 
-let activityList = [
+const activityList = [
   {
     description: 'having my bath',
     completed: false,
