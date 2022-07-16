@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#stats {
+  position: relative;
+  padding: 0 92px 0 46px;
+  height: 50px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#count {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background: #f04848;
+  border-radius: 7px;
+  line-height: 14px;
+  font-size: 9px;
+  top: 11px;
+  right: 6px;
+  min-width: 14px;
+  padding: 0 3px;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px white;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+#stats h2 {
+  color: #545862;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 1rem;
+  line-height: 20px;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#add-activity {
+  position: relative;
+  text-align: left;
+}
+
+#add-activity li {
+  padding: 0;
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+input[type='text'],
+select {
+  color: white;
+}
+
+#add-activity li input[type='text'] {
+  min-width: 60%;
+  max-width: 100%;
+  padding: 0 40px 0 4rem;
+  line-height: 50px;
+  height: 50px;
+  border: none;
+  font-style: italic;
+  background: #545862;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.clear-completed {
+  opacity: 0.5;
+}
+
+.link-button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin: 1rem auto;
+  display: block;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+#activity-list #display {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+  margin-top: 10px;
+}
+
+#activity-list #display li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.fa {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#arrow {
+  color: #545862;
+  transform: rotate(90deg);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+
+.entry {
+  border: none;
+}
