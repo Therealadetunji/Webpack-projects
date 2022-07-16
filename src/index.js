@@ -53,3 +53,6 @@ btn.addEventListener('click', (e) => {
   input.value = '';
   displayPage(activityList);
 });
+
+const edit = document.querySelectorAll('.fa-ellipsis-v');
+edit.forEach((edits, index) => edits.addEventListener('click', () => ToDoList.editActivityEntered(activityList, index)));
