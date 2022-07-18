@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack serve --open"
+    "deploy": "gh-pages -d ./dist "
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Therealadetunji/Webpack-projects/issues"
   },
-  "homepage": "https://github.com/Therealadetunji/Webpack-projects#readme",
+  "homepage": "https://github.com/Therealadetunji/Webpack-projects",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
